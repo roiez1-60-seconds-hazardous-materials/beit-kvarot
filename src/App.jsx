@@ -332,7 +332,14 @@ export default function App(){
   <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#c4a050",marginBottom:"3rem"}}>ממעמקים: כאב השחרור והצמיחה</div></FI>
   <FI d={.5}><div style={{display:"flex",flexDirection:"column",alignItems:"center"}}><Flame s={28}/>
   <div style={{fontFamily:hh,fontSize:"clamp(1.4rem,5vw,1.8rem)",color:"#1a1a1a",fontWeight:700,marginTop:"1.5rem"}}>יהיה זכר הנספים ברוך</div></div></FI>
-  <FI d={1}><div style={{marginTop:"5rem"}}>
+  <FI d={1}><div style={{marginTop:"4rem",textAlign:"center"}}>
+    <div style={{maxWidth:200,margin:"0 auto 2rem"}}>
+      <img src={IMG_C} alt="חנה (הניה) צוקרמן ז״ל" style={{width:"100%",borderRadius:4,boxShadow:"0 4px 20px rgba(0,0,0,.1)"}}/>
+      <div style={{fontFamily:ff,fontSize:"clamp(.82rem,2.8vw,.92rem)",color:"#333",marginTop:"1rem",fontWeight:600}}>חנה (הניה) צוקרמן ז״ל</div>
+      <div style={{fontFamily:ff,fontSize:"clamp(.62rem,2.1vw,.72rem)",color:"#999",marginTop:".3rem",lineHeight:1.8}}>סבתי — ששמרה את הקופסה</div>
+    </div>
+  </div></FI>
+  <FI d={1.3}><div style={{marginTop:"3rem"}}>
     <div style={{fontSize:"clamp(.62rem,2vw,.72rem)",color:"#aaa",lineHeight:2.2}}>{"מבוסס על הספר המשפחתי ״מכתבים להניה״\nדברי שלמה גייזלר ז״ל\nאחי סבתי חנה (הניה) צוקרמן ז״ל"}</div>
     <div style={{width:40,height:1,background:"#ddd",margin:"2rem auto"}}/>
     <div style={{fontSize:"clamp(.58rem,1.8vw,.66rem)",color:"#ccc"}}>60 שניות חומ״ס</div>
