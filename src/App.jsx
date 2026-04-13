@@ -12,6 +12,29 @@ function FI({children,d=0}){
 function Flame({s=22}){return <svg width={s} height={s*1.5} viewBox="0 0 24 36" style={{filter:"drop-shadow(0 0 10px rgba(255,170,40,.5))",margin:"0 auto",display:"block"}}><path d="M12 2C12 2,4 14,4 21c0 5,4 7,8 7s8-2,8-7C20 14,12 2,12 2Z" fill="#d4922a" opacity=".7"><animate attributeName="d" dur="3s" repeatCount="indefinite" values="M12 2C12 2,4 14,4 21c0 5,4 7,8 7s8-2,8-7C20 14,12 2,12 2Z;M12 4C12 4,5 15,5 21c0 4,3 7,7 7s7-3,7-7C19 15,12 4,12 4Z;M12 2C12 2,4 14,4 21c0 5,4 7,8 7s8-2,8-7C20 14,12 2,12 2Z"/></path><path d="M12 10C12 10,8 17,8 21c0 2,2 5,4 5s4-3,4-5C16 17,12 10,12 10Z" fill="#e8b840"><animate attributeName="d" dur="2.2s" repeatCount="indefinite" values="M12 10C12 10,8 17,8 21c0 2,2 5,4 5s4-3,4-5C16 17,12 10,12 10Z;M12 12C12 12,9 17,9 21c0 1.5,1.5 5,3 5s3-3.5,3-5C15 17,12 12,12 12Z;M12 10C12 10,8 17,8 21c0 2,2 5,4 5s4-3,4-5C16 17,12 10,12 10Z"/></path><path d="M12 16C12 16,10 19,10 22c0 1,1 2,2 2s2-1,2-2C14 19,12 16,12 16Z" fill="#fff4d0"/></svg>;}
 
 /* TOKENS */
+function YTPlayer(){
+  const ref=useRef(null);
+  useEffect(()=>{
+    // Load YouTube IFrame API
+    if(!window.YT){
+      const tag=document.createElement('script');
+      tag.src='https://www.youtube.com/iframe_api';
+      document.head.appendChild(tag);
+    }
+    function createPlayer(){
+      new window.YT.Player(ref.current,{
+        height:'1',width:'1',videoId:'GvU6HMZf6Xc',
+        playerVars:{autoplay:1,loop:1,playlist:'GvU6HMZf6Xc',controls:0,showinfo:0,modestbranding:1,rel:0,origin:window.location.origin},
+        events:{onReady:(e)=>{e.target.setVolume(60);e.target.playVideo();}}
+      });
+    }
+    if(window.YT&&window.YT.Player){createPlayer();}
+    else{window.onYouTubeIframeAPIReady=createPlayer;}
+    return()=>{window.onYouTubeIframeAPIReady=null;};
+  },[]);
+  return <div ref={ref} style={{position:'fixed',bottom:-50,left:-50,width:1,height:1,overflow:'hidden',pointerEvents:'none'}}/>;
+}
+
 const ff="'Frank Ruhl Libre',serif";
 const hh="'Karantina',cursive"; /* handwriting */
 
@@ -30,13 +53,8 @@ export default function App(){
 <div style={{background:"#fff",minHeight:"100vh",fontFamily:ff}}>
 <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Karantina:wght@300;400;700&display=swap" rel="stylesheet"/>
 
-{/* YOUTUBE MUSIC - plays on Vercel */}
-{music && <iframe 
-  src="https://www.youtube-nocookie.com/embed/GvU6HMZf6Xc?autoplay=1&loop=1&playlist=GvU6HMZf6Xc&controls=0&showinfo=0&modestbranding=1&rel=0" 
-  allow="autoplay; encrypted-media" 
-  style={{position:"fixed",bottom:-10,left:-10,width:1,height:1,border:"none",pointerEvents:"none"}} 
-  title="אמא שלי — נועה קירל"
-/>}
+{/* YOUTUBE MUSIC via IFrame API */}
+{music && <YTPlayer/>}
 
 {/* ═══════════ COVER ═══════════ */}
 <div style={{...sec("#fff"),minHeight:"100vh",background:"linear-gradient(180deg,#fafaf8 0%,#f4f0ea 100%)"}}>
