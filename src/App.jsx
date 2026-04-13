@@ -365,7 +365,7 @@ export default function App(){
     <div style={{fontSize:"clamp(.82rem,2.7vw,.92rem)",color:"#999",marginTop:".8rem",fontStyle:"italic",direction:"rtl"}}>{"נכדה של חנה (הניה) צוקרמן ז״ל"}</div>
     <a href="https://www.facebook.com/share/1L8YZHGbxm/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:8,marginTop:"1.5rem",padding:"10px 20px",background:"#1a1a1a",color:"#fff",borderRadius:25,textDecoration:"none",fontSize:"clamp(.82rem,2.7vw,.92rem)",fontFamily:ff,boxShadow:"0 2px 12px rgba(0,0,0,.1)"}}>
       <span>{"🕯️"}</span>
-      <span>{"60 שניות חומ״ס — עקבו אחרינו"}</span>
+      <span>{"כבאות והצלה לישראל"}</span>
     </a>
   </div></FI>
 </div>
