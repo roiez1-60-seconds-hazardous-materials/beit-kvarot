@@ -15,19 +15,11 @@ function Flame({s=22}){return <svg width={s} height={s*1.5} viewBox="0 0 24 36" 
 /* TOKENS */
 /* ── MUSIC BUTTON ── */
 function MusicBtn(){
-  const[playing,setPlaying]=useState(false);
-  const handlePlay=()=>{setPlaying(true);};
-  if(playing) return(
-    <div style={{position:"fixed",bottom:0,left:0,right:0,zIndex:999,background:"linear-gradient(0deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.6) 70%,transparent 100%)",padding:"12px 16px 14px",display:"flex",alignItems:"center",justifyContent:"center",gap:10,backdropFilter:"blur(6px)"}}>
-      <span style={{fontSize:14}}>🕯️</span>
-      <iframe src="https://www.youtube.com/embed/GvU6HMZf6Xc?autoplay=1&loop=1&playlist=GvU6HMZf6Xc&controls=1&showinfo=0&modestbranding=1&rel=0" allow="autoplay;encrypted-media" style={{width:240,height:40,border:"none",borderRadius:8,opacity:.9}} title="אמא שלי"/>
-    </div>
-  );
   return(
-    <div onClick={handlePlay} style={{position:"fixed",bottom:0,left:0,right:0,zIndex:999,background:"linear-gradient(0deg,rgba(0,0,0,.8) 0%,rgba(0,0,0,.5) 70%,transparent 100%)",padding:"14px 16px",display:"flex",alignItems:"center",justifyContent:"center",gap:10,cursor:"pointer",backdropFilter:"blur(6px)"}}>
-      <span style={{fontSize:14}}>🕯️</span>
-      <span style={{fontFamily:"'Frank Ruhl Libre',serif",fontSize:"clamp(.72rem,2.4vw,.85rem)",color:"#ddd",letterSpacing:".05em"}}>▶ הפעל מוזיקה — ״אמא שלי״ נועה קירל</span>
-    </div>
+    <a href="https://youtu.be/GvU6HMZf6Xc" target="_blank" rel="noopener noreferrer" style={{position:"fixed",bottom:0,left:0,right:0,zIndex:999,background:"linear-gradient(0deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.5) 70%,transparent 100%)",padding:"16px",display:"flex",alignItems:"center",justifyContent:"center",gap:10,textDecoration:"none",backdropFilter:"blur(6px)"}}>
+      <span style={{fontSize:15}}>🕯️</span>
+      <span style={{fontFamily:"'Frank Ruhl Libre',serif",fontSize:"clamp(.75rem,2.6vw,.88rem)",color:"#fff",letterSpacing:".03em"}}>▶ הפעילו מוזיקה — ״אמא שלי״ נועה קירל</span>
+    </a>
   );
 }
 
