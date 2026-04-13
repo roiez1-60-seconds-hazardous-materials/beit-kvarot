@@ -13,8 +13,11 @@ function Flame({s=22}){return <svg width={s} height={s*1.5} viewBox="0 0 24 36" 
 
 /* TOKENS */
 function YTPlayer(){
+  const[started,setStarted]=useState(false);
   const ref=useRef(null);
-  useEffect(()=>{
+  
+  const handleStart=()=>{
+    setStarted(true);
     // Load YouTube IFrame API
     if(!window.YT){
       const tag=document.createElement('script');
@@ -22,17 +25,28 @@ function YTPlayer(){
       document.head.appendChild(tag);
     }
     function createPlayer(){
-      new window.YT.Player(ref.current,{
-        height:'1',width:'1',videoId:'GvU6HMZf6Xc',
-        playerVars:{autoplay:1,loop:1,playlist:'GvU6HMZf6Xc',controls:0,showinfo:0,modestbranding:1,rel:0,origin:window.location.origin},
-        events:{onReady:(e)=>{e.target.setVolume(60);e.target.playVideo();}}
+      new window.YT.Player('yt-player',{
+        height:'40',width:'180',videoId:'GvU6HMZf6Xc',
+        playerVars:{autoplay:1,loop:1,playlist:'GvU6HMZf6Xc',controls:1,showinfo:0,modestbranding:1,rel:0},
+        events:{onReady:(e)=>{e.target.setVolume(70);e.target.playVideo();}}
       });
     }
-    if(window.YT&&window.YT.Player){createPlayer();}
+    if(window.YT&&window.YT.Player){setTimeout(createPlayer,100);}
     else{window.onYouTubeIframeAPIReady=createPlayer;}
-    return()=>{window.onYouTubeIframeAPIReady=null;};
-  },[]);
-  return <div ref={ref} style={{position:'fixed',bottom:-50,left:-50,width:1,height:1,overflow:'hidden',pointerEvents:'none'}}/>;
+  };
+
+  if(!started) return(
+    <div onClick={handleStart} style={{position:'fixed',bottom:16,left:16,zIndex:999,background:'rgba(0,0,0,.7)',backdropFilter:'blur(8px)',borderRadius:20,padding:'8px 16px',cursor:'pointer',display:'flex',alignItems:'center',gap:8,boxShadow:'0 2px 12px rgba(0,0,0,.3)'}}>
+      <span style={{fontSize:16}}>▶</span>
+      <span style={{fontFamily:"'Frank Ruhl Libre',serif",fontSize:'clamp(.65rem,2vw,.75rem)',color:'#fff'}}>הפעל מוזיקה</span>
+    </div>
+  );
+
+  return(
+    <div style={{position:'fixed',bottom:12,left:12,zIndex:999,borderRadius:12,overflow:'hidden',boxShadow:'0 4px 20px rgba(0,0,0,.4)'}}>
+      <div id="yt-player"/>
+    </div>
+  );
 }
 
 const ff="'Frank Ruhl Libre',serif";
