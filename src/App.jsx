@@ -355,7 +355,16 @@ export default function App(){
   <FI d={1.3}><div style={{marginTop:"3rem"}}>
     <div style={{fontSize:"clamp(.62rem,2vw,.72rem)",color:"#aaa",lineHeight:2.2}}>{"מבוסס על הספר המשפחתי ״מכתבים להניה״\nדברי שלמה גייזלר ז״ל\nאחי סבתי חנה (הניה) צוקרמן ז״ל"}</div>
     <div style={{width:40,height:1,background:"#ddd",margin:"2rem auto"}}/>
-    <div style={{fontSize:"clamp(.58rem,1.8vw,.66rem)",color:"#ccc"}}>60 שניות חומ״ס</div>
+    <div style={{fontSize:"clamp(.58rem,1.8vw,.66rem)",color:"#ccc",marginBottom:"2rem"}}>60 שניות חומ״ס</div>
+    <div style={{width:50,height:1,background:"#ddd",margin:"0 auto 2rem"}}/>
+    <div style={{fontSize:"clamp(.7rem,2.3vw,.82rem)",color:"#888",lineHeight:2.2,direction:"rtl"}}>{"נכתב על ידי"}</div>
+    <div style={{fontSize:"clamp(.82rem,2.8vw,.95rem)",color:"#444",fontWeight:600,lineHeight:2,direction:"rtl",marginTop:".3rem"}}>{"ס/טפסר רועי צוקרמן"}</div>
+    <div style={{fontSize:"clamp(.68rem,2.2vw,.78rem)",color:"#888",lineHeight:1.8,direction:"rtl"}}>{"רע״ן חומ״ס באגף המבצעים\nכבאות והצלה לישראל"}</div>
+    <div style={{fontSize:"clamp(.68rem,2.2vw,.78rem)",color:"#999",marginTop:".8rem",fontStyle:"italic",direction:"rtl"}}>{"נכדה של חנה (הניה) צוקרמן ז״ל"}</div>
+    <a href="https://www.facebook.com/share/1L8YZHGbxm/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:8,marginTop:"1.5rem",padding:"10px 20px",background:"#1a1a1a",color:"#fff",borderRadius:25,textDecoration:"none",fontSize:"clamp(.68rem,2.2vw,.78rem)",fontFamily:ff,boxShadow:"0 2px 12px rgba(0,0,0,.1)"}}>
+      <span>{"🕯️"}</span>
+      <span>{"60 שניות חומ״ס — עקבו אחרינו"}</span>
+    </a>
   </div></FI>
 </div>
 <div style={{height:"2rem",background:"#fff"}}/>
