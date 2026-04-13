@@ -49,7 +49,7 @@ export default function App(){
 
 
 {/* ═══════════ COVER ═══════════ */}
-<div style={{...sec("#fff"),minHeight:"100vh",background:"linear-gradient(180deg,#fafaf8 0%,#f4f0ea 100%)"}}>
+<div onClick={!open?handleOpen:undefined} style={{...sec("#fff"),minHeight:"100vh",background:"linear-gradient(180deg,#fafaf8 0%,#f4f0ea 100%)",cursor:open?"default":"pointer"}}>
   <FI><Flame s={28}/></FI>
   <FI d={.4}><div style={{fontSize:"clamp(.68rem,2.2vw,.78rem)",color:"#999",letterSpacing:".5em",marginTop:"2rem",marginBottom:"3rem",textAlign:"center",textTransform:"uppercase",fontWeight:300}}>יום השואה תשפ״ו</div></FI>
   <FI d={.7}>
