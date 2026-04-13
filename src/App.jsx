@@ -78,7 +78,7 @@ export default function App(){
     <img src={IMG_F} alt="חנה וצמרת גייזלר" style={{width:"100%",boxShadow:"0 8px 40px rgba(0,0,0,.12)"}}/>
     <div style={{marginTop:"1.5rem",borderTop:"1px solid #ddd",paddingTop:"1rem"}}>
       <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#333",fontWeight:600}}>יוכבד גייזלר וצ׳שה (צמרת)</div>
-      <div style={{fontSize:"clamp(.65rem,2.1vw,.72rem)",color:"#999",marginTop:".3rem"}}>סבתא רבה ואחותה. שתיהן נספו בשואה.</div>
+      <div style={{fontSize:"clamp(.65rem,2.1vw,.72rem)",color:"#999",marginTop:".3rem"}}>סבתא רבה יוכבד ובתה צמרת. שתיהן נספו בשואה.</div>
     </div>
   </div></FI>
 </div>
