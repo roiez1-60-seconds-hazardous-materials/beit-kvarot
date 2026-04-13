@@ -17,6 +17,8 @@ function Flame({s=22}){return <svg width={s} height={s*1.5} viewBox="0 0 24 36" 
 
 
 
+function CW({children,w="680px"}){return <div style={{maxWidth:w,margin:"0 auto",width:"100%"}}>{children}</div>;}
+
 const ff="'Frank Ruhl Libre',serif";
 const hh="'Karantina',cursive"; /* handwriting */
 
@@ -68,13 +70,13 @@ export default function App(){
 {/* ═══════════ PART 1 HEADER ═══════════ */}
 <div style={{background:"#1a1a1a",padding:"4rem 1.5rem",textAlign:"center",direction:"rtl"}}>
   <FI><div style={{color:"#c4a050",fontSize:"clamp(.6rem,2vw,.7rem)",letterSpacing:".6em",fontWeight:300,marginBottom:".8rem"}}>פרק ראשון</div>
-  <div style={{fontFamily:hh,color:"#fff",fontSize:"clamp(1.8rem,6vw,2.8rem)",fontWeight:700}}>הסיפור המשפחתי</div>
+  <div style={{fontFamily:hh,color:"#fff",fontSize:"clamp(1.8rem,6vw,2.8rem)",fontWeight:700}} className="chapter-title">הסיפור המשפחתי</div>
   <div style={{color:"#888",fontSize:"clamp(.72rem,2.4vw,.82rem)",marginTop:".8rem"}}>מתוך ״מכתבים להניה״ — דברי שלמה גייזלר ז״ל</div></FI>
 </div>
 
 {/* FAMILY PHOTO — full width museum style */}
 <div style={{background:"#f8f4ee",padding:"4rem 1.5rem",textAlign:"center",direction:"rtl"}}>
-  <FI><div style={{maxWidth:340,margin:"0 auto"}}>
+  <FI><div style={{maxWidth:340,margin:"0 auto"}} className="photo-container">
     <img src={IMG_F} alt="חנה וצמרת גייזלר" style={{width:"100%",boxShadow:"0 8px 40px rgba(0,0,0,.12)"}}/>
     <div style={{marginTop:"1.5rem",borderTop:"1px solid #ddd",paddingTop:"1rem"}}>
       <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#333",fontWeight:600}}>יוכבד גייזלר וצ׳שה (צמרת)</div>
@@ -147,7 +149,7 @@ export default function App(){
 {/* ═══════════ PART 2 HEADER ═══════════ */}
 <div style={{background:"#111",padding:"5rem 1.5rem",textAlign:"center",direction:"rtl"}}>
   <FI><div style={{color:"#c4a050",fontSize:"clamp(.6rem,2vw,.7rem)",letterSpacing:".6em",fontWeight:300,marginBottom:".8rem"}}>פרק שני</div>
-  <div style={{fontFamily:hh,color:"#fff",fontSize:"clamp(1.8rem,6vw,2.8rem)",fontWeight:700}}>תעשיית ההשמדה</div>
+  <div style={{fontFamily:hh,color:"#fff",fontSize:"clamp(1.8rem,6vw,2.8rem)",fontWeight:700}} className="chapter-title">תעשיית ההשמדה</div>
   <div style={{color:"#666",fontSize:"clamp(.72rem,2.4vw,.82rem)",marginTop:".8rem"}}>הכימיה, ההנדסה והמנגנון — מבט מקצועי</div></FI>
 </div>
 
@@ -183,7 +185,7 @@ export default function App(){
 
 {/* GAS VAN PHOTO */}
 <div style={{background:"#0a0a0a",padding:"3rem 1.5rem",textAlign:"center"}}>
-  <FI><div style={{maxWidth:420,margin:"0 auto"}}>
+  <FI><div style={{maxWidth:420,margin:"0 auto"}} className="photo-container">
     <img src={IMG_V} alt="משאית גז מגירוס דויץ" style={{width:"100%",boxShadow:"0 8px 40px rgba(0,0,0,.5)"}}/>
     <div style={{fontFamily:ff,fontSize:"clamp(.62rem,2vw,.7rem)",color:"#666",marginTop:"1rem",lineHeight:1.8,direction:"rtl"}}>{"משאית גז מתוצרת מגירוס דויץ — ממחנה ההשמדה חלמנו.\nחברי ועדת פשעי מלחמה בודקים את הרכב."}</div>
   </div></FI>
@@ -254,7 +256,7 @@ export default function App(){
 
 {/* ZYKLON PHOTO */}
 <div style={{background:"#0a0a0a",padding:"3rem 1.5rem",textAlign:"center"}}>
-  <FI><div style={{maxWidth:380,margin:"0 auto"}}>
+  <FI><div style={{maxWidth:380,margin:"0 auto"}} className="photo-container">
     <img src={IMG_Z} alt="פחיות ציקלון B" style={{width:"100%",boxShadow:"0 8px 40px rgba(0,0,0,.5)"}}/>
     <div style={{fontSize:"clamp(.62rem,2vw,.7rem)",color:"#666",marginTop:"1rem",lineHeight:1.8}}>פחיות ציקלון B — הגלולות הכחולות הן דיאטומיט ספוג במימן ציאנידי נוזלי</div>
   </div></FI>
@@ -289,7 +291,7 @@ export default function App(){
 
 {/* SCHEMA PHOTO */}
 <div style={{background:"#0a0a0a",padding:"3rem 1.5rem",textAlign:"center"}}>
-  <FI><div style={{maxWidth:260,margin:"0 auto"}}>
+  <FI><div style={{maxWidth:260,margin:"0 auto"}} className="photo-container">
     <img src={IMG_S} alt="סכמת עמוד ציקלון B" style={{width:"100%",boxShadow:"0 8px 40px rgba(0,0,0,.5)",background:"#fff",padding:6,borderRadius:2}}/>
     <div style={{fontSize:"clamp(.6rem,2vw,.68rem)",color:"#666",marginTop:"1rem",lineHeight:1.8,direction:"rtl"}}>{"סכמת עמוד הרשת להכנסת ציקלון B לתאי הגזים\nעל פי עדותו של מיכאל קולה, אסיר מס׳ 2718, שעבד בבית המלאכה למתכת"}</div>
   </div></FI>
@@ -298,7 +300,7 @@ export default function App(){
 {/* ═══════════ PART 3 ═══════════ */}
 <div style={{background:"#1a1a1a",padding:"4rem 1.5rem",textAlign:"center",direction:"rtl"}}>
   <FI><div style={{color:"#c4a050",fontSize:"clamp(.6rem,2vw,.7rem)",letterSpacing:".6em",fontWeight:300,marginBottom:".8rem"}}>פרק שלישי</div>
-  <div style={{fontFamily:hh,color:"#fff",fontSize:"clamp(1.8rem,6vw,2.8rem)",fontWeight:700}}>המכתב שהגיע אחרי השקט</div></FI>
+  <div style={{fontFamily:hh,color:"#fff",fontSize:"clamp(1.8rem,6vw,2.8rem)",fontWeight:700}} className="chapter-title">המכתב שהגיע אחרי השקט</div></FI>
 </div>
 
 {/* 1945 LETTER */}
@@ -344,9 +346,9 @@ export default function App(){
   <FI><div style={{fontSize:"clamp(.65rem,2.1vw,.75rem)",color:"#999",letterSpacing:".3em",marginBottom:".5rem"}}>יום השואה תשפ״ו</div>
   <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#c4a050",marginBottom:"3rem"}}>ממעמקים: כאב השחרור והצמיחה</div></FI>
   <FI d={.5}><div style={{display:"flex",flexDirection:"column",alignItems:"center"}}><Flame s={28}/>
-  <div style={{fontFamily:hh,fontSize:"clamp(1.4rem,5vw,1.8rem)",color:"#1a1a1a",fontWeight:700,marginTop:"1.5rem"}}>יהיה זכר הנספים ברוך</div></div></FI>
+  <div style={{fontFamily:hh,fontSize:"clamp(1.4rem,5vw,1.8rem)",color:"#1a1a1a",fontWeight:700,marginTop:"1.5rem"}} className="hero-title">יהיה זכר הנספים ברוך</div></div></FI>
   <FI d={1}><div style={{marginTop:"4rem",textAlign:"center"}}>
-    <div style={{maxWidth:340,margin:"0 auto 2rem"}}>
+    <div style={{maxWidth:340,margin:"0 auto 2rem"}} className="photo-container">
       <img src={IMG_C} alt="מכתבים להניה — כריכה אחורית" style={{width:"100%",borderRadius:4,boxShadow:"0 8px 30px rgba(0,0,0,.15)"}}/>
       <div style={{fontFamily:ff,fontSize:"clamp(.82rem,2.8vw,.92rem)",color:"#333",marginTop:"1.2rem",fontWeight:600}}>חנה (הניה) צוקרמן ז״ל</div>
       <div style={{fontFamily:ff,fontSize:"clamp(.62rem,2.1vw,.72rem)",color:"#999",marginTop:".3rem",lineHeight:1.8}}>סבתי — ששמרה את הקופסה</div>
