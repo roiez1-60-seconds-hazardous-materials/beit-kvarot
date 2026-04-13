@@ -53,15 +53,15 @@ export default function App(){
 {/* ═══════════ COVER ═══════════ */}
 <div onClick={!open?handleOpen:undefined} style={{...sec("#fff"),minHeight:"100vh",background:"linear-gradient(180deg,#fafaf8 0%,#f4f0ea 100%)",cursor:open?"default":"pointer"}}>
   <FI><Flame s={28}/></FI>
-  <FI d={.4}><div style={{fontSize:"clamp(.68rem,2.2vw,.78rem)",color:"#999",letterSpacing:".5em",marginTop:"2rem",marginBottom:"3rem",textAlign:"center",textTransform:"uppercase",fontWeight:300}}>יום השואה תשפ״ו</div></FI>
+  <FI d={.4}><div style={{fontSize:"clamp(.82rem,2.7vw,.92rem)",color:"#999",letterSpacing:".5em",marginTop:"2rem",marginBottom:"3rem",textAlign:"center",textTransform:"uppercase",fontWeight:300}}>יום השואה תשפ״ו</div></FI>
   <FI d={.7}>
     <div onClick={handleOpen} style={{cursor:"pointer",textAlign:"center"}}>
       <div style={{fontFamily:hh,fontSize:"clamp(2.2rem,8vw,3.5rem)",color:"#1a1a1a",fontWeight:700,lineHeight:1.3,letterSpacing:".02em"}}>״בית קברות״</div>
       <div style={{width:60,height:2,background:"#c4a050",margin:"1.5rem auto"}}/>
-      <div style={{fontSize:"clamp(.82rem,2.8vw,.95rem)",color:"#666",lineHeight:2.2,maxWidth:440,margin:"0 auto"}}>{"סבתי חנה שמרה קופסה.\nהיא קראה לה ״בית קברות״.\n\nכי למשפחתה לא היה קבר.\nלא מצבה. לא מקום.\nרק מכתבים בקופסה."}</div>
+      <div style={{fontSize:"clamp(.98rem,3.1vw,1.1rem)",color:"#666",lineHeight:2.2,maxWidth:440,margin:"0 auto"}}>{"סבתי חנה שמרה קופסה.\nהיא קראה לה ״בית קברות״.\n\nכי למשפחתה לא היה קבר.\nלא מצבה. לא מקום.\nרק מכתבים בקופסה."}</div>
     </div>
   </FI>
-  {!open && <FI d={1.2}><div style={{fontSize:"clamp(.7rem,2.3vw,.8rem)",color:"#bbb",marginTop:"3rem",textAlign:"center",animation:"p 2.5s ease-in-out infinite"}}>▾ לחצו לפתוח</div></FI>}
+  {!open && <FI d={1.2}><div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#bbb",marginTop:"3rem",textAlign:"center",animation:"p 2.5s ease-in-out infinite"}}>▾ לחצו לפתוח</div></FI>}
   <style>{"@keyframes p{0%,100%{opacity:.3}50%{opacity:.8}}"}</style>
 </div>
 
@@ -69,9 +69,9 @@ export default function App(){
 
 {/* ═══════════ PART 1 HEADER ═══════════ */}
 <div style={{background:"#1a1a1a",padding:"4rem 1.5rem",textAlign:"center",direction:"rtl"}}>
-  <FI><div style={{color:"#c4a050",fontSize:"clamp(.6rem,2vw,.7rem)",letterSpacing:".6em",fontWeight:300,marginBottom:".8rem"}}>פרק ראשון</div>
+  <FI><div style={{color:"#c4a050",fontSize:"clamp(.75rem,2.4vw,.85rem)",letterSpacing:".6em",fontWeight:300,marginBottom:".8rem"}}>פרק ראשון</div>
   <div style={{fontFamily:hh,color:"#fff",fontSize:"clamp(1.8rem,6vw,2.8rem)",fontWeight:700}} className="chapter-title">הסיפור המשפחתי</div>
-  <div style={{color:"#888",fontSize:"clamp(.72rem,2.4vw,.82rem)",marginTop:".8rem"}}>מתוך ״מכתבים להניה״ — דברי שלמה גייזלר ז״ל</div></FI>
+  <div style={{color:"#888",fontSize:"clamp(.85rem,2.8vw,.95rem)",marginTop:".8rem"}}>מתוך ״מכתבים להניה״ — דברי שלמה גייזלר ז״ל</div></FI>
 </div>
 
 {/* FAMILY PHOTO — full width museum style */}
@@ -79,7 +79,7 @@ export default function App(){
   <FI><div style={{maxWidth:340,margin:"0 auto"}} className="photo-container">
     <img src={IMG_F} alt="חנה וצמרת גייזלר" style={{width:"100%",boxShadow:"0 8px 40px rgba(0,0,0,.12)"}}/>
     <div style={{marginTop:"1.5rem",borderTop:"1px solid #ddd",paddingTop:"1rem"}}>
-      <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#333",fontWeight:600}}>יוכבד גייזלר וצ׳שה (צמרת)</div>
+      <div style={{fontSize:"clamp(1rem,3.2vw,1.12rem)",color:"#333",fontWeight:600}}>יוכבד גייזלר וצ׳שה (צמרת)</div>
       <div style={{fontSize:"clamp(.65rem,2.1vw,.72rem)",color:"#999",marginTop:".3rem"}}>סבתא רבה יוכבד ובתה צמרת. שתיהן נספו בשואה.</div>
     </div>
   </div></FI>
@@ -87,55 +87,55 @@ export default function App(){
 
 {/* TESTIMONIES — museum info panels */}
 <div style={sec("#fff")}>
-  <FI><div style={{color:"#c4a050",fontSize:"clamp(.65rem,2.1vw,.75rem)",letterSpacing:".3em",fontWeight:400}}>ספטמבר 1939 · וולצלבק, פולין</div>
-  <div style={{fontSize:"clamp(.75rem,2.5vw,.85rem)",color:"#999",marginTop:".3rem",marginBottom:"2.5rem"}}>״רחוב המוות״</div></FI>
-  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(1rem,3.5vw,1.3rem)",color:"#222",lineHeight:2.2,maxWidth:560,textAlign:"center",direction:"rtl",fontWeight:400}}>{"פתאום אני רואה בחור צעיר בן גילי במדי הצבא הגרמני, קורא ליהודי בגיל כ-50 ומצווה עליו לקחת אבן בגודל של כמה מטרים מרובעים.\n\nהבן אדם הזה מנסה אבל זה בלתי אפשרי להרים כמה טונות.\n\nואז הצעיר הזה עם הרובה המכודן תוקע את הכידון בגבו של היהודי וזה מתמוטט ושותת דם."}</div></FI>
-  <FI d={.7}><div style={{fontSize:"clamp(.78rem,2.6vw,.88rem)",color:"#888",marginTop:"2rem",textAlign:"center",lineHeight:2}}>{"זה היה ההרוג הראשון באותו היום.\nזה רק בוקר, שעה 09:00. יש עוד 6 שעות לעבודה."}</div></FI>
+  <FI><div style={{color:"#c4a050",fontSize:"clamp(.8rem,2.6vw,.9rem)",letterSpacing:".3em",fontWeight:400}}>ספטמבר 1939 · וולצלבק, פולין</div>
+  <div style={{fontSize:"clamp(.88rem,2.8vw,.98rem)",color:"#999",marginTop:".3rem",marginBottom:"2.5rem"}}>״רחוב המוות״</div></FI>
+  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(1.15rem,3.8vw,1.4rem)",color:"#222",lineHeight:2.2,maxWidth:560,textAlign:"center",direction:"rtl",fontWeight:400}}>{"פתאום אני רואה בחור צעיר בן גילי במדי הצבא הגרמני, קורא ליהודי בגיל כ-50 ומצווה עליו לקחת אבן בגודל של כמה מטרים מרובעים.\n\nהבן אדם הזה מנסה אבל זה בלתי אפשרי להרים כמה טונות.\n\nואז הצעיר הזה עם הרובה המכודן תוקע את הכידון בגבו של היהודי וזה מתמוטט ושותת דם."}</div></FI>
+  <FI d={.7}><div style={{fontSize:"clamp(.9rem,2.9vw,1rem)",color:"#888",marginTop:"2rem",textAlign:"center",lineHeight:2}}>{"זה היה ההרוג הראשון באותו היום.\nזה רק בוקר, שעה 09:00. יש עוד 6 שעות לעבודה."}</div></FI>
 </div>
 
 <div style={{width:"100%",height:1,background:"#eee"}}/>
 
 <div style={sec("#fff")}>
-  <FI><div style={{fontFamily:hh,fontSize:"clamp(1rem,3.5vw,1.3rem)",color:"#222",lineHeight:2.2,maxWidth:560,textAlign:"center",direction:"rtl",fontWeight:400}}>{"נפלט לי מגרוני:\n״יהודים, כל אחד אבן לעבר הגרמני ונגמור אותו.״\n\nסביבי נעשה עיגול.\nמה אתה רוצה? להרוג את כל העיר?\n\nבאותו הרגע הבנתי שהעם הזה ילך למות ללא התנגדות.\n\nהגרמני קרא לי לקחת את האבן. נעצרתי 50 מטר ממנו וצעקתי בגרמנית ברורה — את האבן הזאת בגודל של בן אדם לא יכול להזיזה. תירה!\n\nועמדתי עם הידיים מאחורי גבי וחיכיתי."}</div></FI>
+  <FI><div style={{fontFamily:hh,fontSize:"clamp(1.15rem,3.8vw,1.4rem)",color:"#222",lineHeight:2.2,maxWidth:560,textAlign:"center",direction:"rtl",fontWeight:400}}>{"נפלט לי מגרוני:\n״יהודים, כל אחד אבן לעבר הגרמני ונגמור אותו.״\n\nסביבי נעשה עיגול.\nמה אתה רוצה? להרוג את כל העיר?\n\nבאותו הרגע הבנתי שהעם הזה ילך למות ללא התנגדות.\n\nהגרמני קרא לי לקחת את האבן. נעצרתי 50 מטר ממנו וצעקתי בגרמנית ברורה — את האבן הזאת בגודל של בן אדם לא יכול להזיזה. תירה!\n\nועמדתי עם הידיים מאחורי גבי וחיכיתי."}</div></FI>
 </div>
 
 <div style={{width:"100%",height:1,background:"#eee"}}/>
 
 {/* OCT 1939 */}
 <div style={sec("#fff")}>
-  <FI><div style={{color:"#c4a050",fontSize:"clamp(.65rem,2.1vw,.75rem)",letterSpacing:".3em",marginBottom:"2.5rem"}}>אוקטובר 1939</div></FI>
-  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(1rem,3.5vw,1.3rem)",color:"#222",lineHeight:2.2,maxWidth:560,textAlign:"center",direction:"rtl",fontWeight:400}}>{"קראתי לאמא לחלון ואמרתי לה —\n\nמה שאת רואה זה אומר שהגרמנים החליטו להשמיד את כל העם היהודי.\n\nיש בידיהם צבא של מיליוני חיילים, טנקים, מטוסים וארטלריה, וכל זה מיועד להשמדת היהודים. ליהודים אין כלום, הם יצליחו.\n\nבואי אמא, נברח. הגבול לרוסיה פתוח.\nאין כאן יותר שום סיכוי להישאר בחיים."}</div></FI>
-  <FI d={.7}><div style={{fontSize:"clamp(.82rem,2.8vw,.95rem)",color:"#888",marginTop:"2rem",textAlign:"center",fontStyle:"italic",lineHeight:2}}>{"אמא אמרה —\n״אתה מוכרח לברוח, אתה גבר.\nבנשים רוזבלט לא יתן לגעת.״"}</div></FI>
+  <FI><div style={{color:"#c4a050",fontSize:"clamp(.8rem,2.6vw,.9rem)",letterSpacing:".3em",marginBottom:"2.5rem"}}>אוקטובר 1939</div></FI>
+  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(1.15rem,3.8vw,1.4rem)",color:"#222",lineHeight:2.2,maxWidth:560,textAlign:"center",direction:"rtl",fontWeight:400}}>{"קראתי לאמא לחלון ואמרתי לה —\n\nמה שאת רואה זה אומר שהגרמנים החליטו להשמיד את כל העם היהודי.\n\nיש בידיהם צבא של מיליוני חיילים, טנקים, מטוסים וארטלריה, וכל זה מיועד להשמדת היהודים. ליהודים אין כלום, הם יצליחו.\n\nבואי אמא, נברח. הגבול לרוסיה פתוח.\nאין כאן יותר שום סיכוי להישאר בחיים."}</div></FI>
+  <FI d={.7}><div style={{fontSize:"clamp(.98rem,3.1vw,1.1rem)",color:"#888",marginTop:"2rem",textAlign:"center",fontStyle:"italic",lineHeight:2}}>{"אמא אמרה —\n״אתה מוכרח לברוח, אתה גבר.\nבנשים רוזבלט לא יתן לגעת.״"}</div></FI>
 </div>
 
 {/* TZEMERET */}
 <div style={{background:"#f8f4ee",padding:"5rem 1.5rem",textAlign:"center",direction:"rtl"}}>
-  <FI><div style={{color:"#c4a050",fontSize:"clamp(.65rem,2.1vw,.75rem)",letterSpacing:".3em",marginBottom:"2rem"}}>נובמבר 1939</div></FI>
+  <FI><div style={{color:"#c4a050",fontSize:"clamp(.8rem,2.6vw,.9rem)",letterSpacing:".3em",marginBottom:"2rem"}}>נובמבר 1939</div></FI>
   <FI d={.3}><div style={{fontSize:"clamp(1.05rem,3.8vw,1.3rem)",color:"#222",lineHeight:2.4,maxWidth:500,margin:"0 auto",fontWeight:500}}>{"אחותי הנחמדה צמרת\nהיא אשר העזה לגשת לגסטאפו\nעל מנת לקבל עבורי צו גירוש."}</div></FI>
-  <FI d={.7}><div style={{fontSize:"clamp(.82rem,2.8vw,.92rem)",color:"#9a2020",marginTop:"2rem",fontWeight:600}}>הצו הציל את חייו. צמרת נספתה בשואה.</div></FI>
+  <FI d={.7}><div style={{fontSize:"clamp(.95rem,3vw,1.05rem)",color:"#9a2020",marginTop:"2rem",fontWeight:600}}>הצו הציל את חייו. צמרת נספתה בשואה.</div></FI>
 </div>
 
 {/* ═══ THE FAREWELL ═══ */}
 <div style={{...sec("#fff","120vh")}}>
-  <FI><div style={{fontSize:"clamp(.68rem,2.2vw,.78rem)",color:"#999",letterSpacing:".2em",marginBottom:"2.5rem"}}>תחנת הרכבת · וולצלבק</div></FI>
-  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(.95rem,3.2vw,1.2rem)",color:"#333",lineHeight:2.3,maxWidth:520,textAlign:"center",direction:"rtl",fontWeight:400}}>{"ואנחנו עומדים צפופים\nואז אמא חישבה לבכות.\n\nנדמה היה לי שהגרמני מבחין שאימי בוכה\nואז אני פלטתי לאמא —"}</div></FI>
+  <FI><div style={{fontSize:"clamp(.82rem,2.7vw,.92rem)",color:"#999",letterSpacing:".2em",marginBottom:"2.5rem"}}>תחנת הרכבת · וולצלבק</div></FI>
+  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(1.1rem,3.5vw,1.3rem)",color:"#333",lineHeight:2.3,maxWidth:520,textAlign:"center",direction:"rtl",fontWeight:400}}>{"ואנחנו עומדים צפופים\nואז אמא חישבה לבכות.\n\nנדמה היה לי שהגרמני מבחין שאימי בוכה\nואז אני פלטתי לאמא —"}</div></FI>
   <FI d={.9}><div style={{margin:"3rem 0",padding:"2.5rem 1.5rem",maxWidth:520,borderTop:"3px solid #c4a050",borderBottom:"3px solid #c4a050"}}>
     <div style={{fontFamily:hh,fontSize:"clamp(1.2rem,4.5vw,1.7rem)",color:"#1a1a1a",fontWeight:700,textAlign:"center",lineHeight:2.2,direction:"rtl"}}>{"״אמא תפסיקי לבכות,\nתבכי כשאחזור ונפגש\nואז לא תפסיקי לבכות,\nאו שלא אפרד ממך בכלל.״"}</div>
   </div></FI>
-  <FI d={1.6}><div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#999",textAlign:"center"}}>האמא הפסיקה לבכות.</div></FI>
+  <FI d={1.6}><div style={{fontSize:"clamp(1rem,3.2vw,1.12rem)",color:"#999",textAlign:"center"}}>האמא הפסיקה לבכות.</div></FI>
   <FI d={2.3}><div style={{fontSize:"clamp(.95rem,3.2vw,1.1rem)",color:"#9a2020",fontWeight:700,marginTop:"1.5rem",textAlign:"center"}}>הם לא נפגשו עוד.</div></FI>
 </div>
 
 {/* JOURNEY */}
 <div style={sec("#f8f4ee")}>
-  <FI><div style={{color:"#c4a050",fontSize:"clamp(.65rem,2.1vw,.75rem)",letterSpacing:".3em",marginBottom:"2.5rem"}}>חורף 1939 — הבריחה מזרחה</div></FI>
-  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(.95rem,3.2vw,1.2rem)",color:"#333",lineHeight:2.3,maxWidth:560,textAlign:"center",direction:"rtl",fontWeight:400}}>{"בנקודת גבול התאספו כעשרת אלפים איש.\nהיינו בלא כל מחסה, בשטח ריק וחשוף ומכוסה שלגים.\n\nקבוצת זקנים התגוללו על האדמה\nימים ולילות ומיאנו לחזור.\nהם בחרו למות כאן.\n\nהורכבה קבוצה של ארבעה אנשים,\nבתוכם — מרדכי אנילביץ׳ ואני."}</div></FI>
-  <FI d={.7}><div style={{fontSize:"clamp(.72rem,2.4vw,.82rem)",color:"#999",marginTop:"2rem",textAlign:"center"}}>מרדכי אנילביץ׳ — מי שיעמוד בראש מרד גטו ורשה.</div></FI>
+  <FI><div style={{color:"#c4a050",fontSize:"clamp(.8rem,2.6vw,.9rem)",letterSpacing:".3em",marginBottom:"2.5rem"}}>חורף 1939 — הבריחה מזרחה</div></FI>
+  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(1.1rem,3.5vw,1.3rem)",color:"#333",lineHeight:2.3,maxWidth:560,textAlign:"center",direction:"rtl",fontWeight:400}}>{"בנקודת גבול התאספו כעשרת אלפים איש.\nהיינו בלא כל מחסה, בשטח ריק וחשוף ומכוסה שלגים.\n\nקבוצת זקנים התגוללו על האדמה\nימים ולילות ומיאנו לחזור.\nהם בחרו למות כאן.\n\nהורכבה קבוצה של ארבעה אנשים,\nבתוכם — מרדכי אנילביץ׳ ואני."}</div></FI>
+  <FI d={.7}><div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#999",marginTop:"2rem",textAlign:"center"}}>מרדכי אנילביץ׳ — מי שיעמוד בראש מרד גטו ורשה.</div></FI>
 </div>
 
 {/* SILENCE */}
 <div style={{...sec("#fff"),minHeight:"70vh"}}>
-  <FI><div style={{fontSize:"clamp(.88rem,3vw,1.02rem)",color:"#333",lineHeight:2.4,maxWidth:480,textAlign:"center",direction:"rtl"}}>{"המכתב האחרון מגיע מווילנה, 1940.\n\nשלמה כותב לחנה:\n״עוד אפשר להציל את אמא ואת אחותנו.\nאת חייבת לעזור.״"}</div></FI>
+  <FI><div style={{fontSize:"clamp(1.02rem,3.3vw,1.15rem)",color:"#333",lineHeight:2.4,maxWidth:480,textAlign:"center",direction:"rtl"}}>{"המכתב האחרון מגיע מווילנה, 1940.\n\nשלמה כותב לחנה:\n״עוד אפשר להציל את אמא ואת אחותנו.\nאת חייבת לעזור.״"}</div></FI>
   <FI d={.8}><div style={{width:60,height:2,background:"#ddd",margin:"3rem auto"}}/></FI>
   <FI d={1.2}><div style={{fontFamily:hh,fontSize:"clamp(1.3rem,5vw,1.8rem)",color:"#bbb",textAlign:"center"}}>ואז — שקט.</div></FI>
 </div>
@@ -148,33 +148,33 @@ export default function App(){
 
 {/* ═══════════ PART 2 HEADER ═══════════ */}
 <div style={{background:"#111",padding:"5rem 1.5rem",textAlign:"center",direction:"rtl"}}>
-  <FI><div style={{color:"#c4a050",fontSize:"clamp(.6rem,2vw,.7rem)",letterSpacing:".6em",fontWeight:300,marginBottom:".8rem"}}>פרק שני</div>
+  <FI><div style={{color:"#c4a050",fontSize:"clamp(.75rem,2.4vw,.85rem)",letterSpacing:".6em",fontWeight:300,marginBottom:".8rem"}}>פרק שני</div>
   <div style={{fontFamily:hh,color:"#fff",fontSize:"clamp(1.8rem,6vw,2.8rem)",fontWeight:700}} className="chapter-title">תעשיית ההשמדה</div>
-  <div style={{color:"#666",fontSize:"clamp(.72rem,2.4vw,.82rem)",marginTop:".8rem"}}>הכימיה, ההנדסה והמנגנון — מבט מקצועי</div></FI>
+  <div style={{color:"#666",fontSize:"clamp(.85rem,2.8vw,.95rem)",marginTop:".8rem"}}>הכימיה, ההנדסה והמנגנון — מבט מקצועי</div></FI>
 </div>
 
 {/* GAS VANS */}
 <div style={{background:"#111",padding:"5rem 1.5rem",direction:"rtl"}}>
   <div style={{maxWidth:640,margin:"0 auto"}}>
-    <FI><div style={{color:"#c4a050",fontSize:"clamp(.65rem,2vw,.72rem)",letterSpacing:".3em",textAlign:"center",marginBottom:".5rem"}}>שלב א׳</div>
+    <FI><div style={{color:"#c4a050",fontSize:"clamp(.78rem,2.5vw,.88rem)",letterSpacing:".3em",textAlign:"center",marginBottom:".5rem"}}>שלב א׳</div>
     <div style={{color:"#fff",fontSize:"clamp(1.1rem,4vw,1.5rem)",fontWeight:700,textAlign:"center",marginBottom:"2.5rem"}}>משאיות הגז — 1941</div></FI>
 
-    <FI d={.3}><div style={{color:"#bbb",fontSize:"clamp(.82rem,2.7vw,.92rem)",lineHeight:2.3,textAlign:"right",marginBottom:"2rem"}}>{"לאחר תחילת מבצע ברברוסה (22 ביוני 1941) — הפלישה הגרמנית לברית המועצות — רצחו יחידות האיינזצגרופן מאות אלפי אזרחים ביריות. חיילים ומפקדים החלו להתלונן על הנזק הנפשי שנגרם להם מירי בנשים, ילדים וחולים.\n\nבמשרד הראשי לביטחון הרייך (RSHA) בברלין התחילו לחפש שיטת רצח ״נקייה יותר״ — שיטה שתקל על המבצעים."}</div></FI>
+    <FI d={.3}><div style={{color:"#bbb",fontSize:"clamp(.98rem,3.1vw,1.1rem)",lineHeight:2.3,textAlign:"right",marginBottom:"2rem"}}>{"לאחר תחילת מבצע ברברוסה (22 ביוני 1941) — הפלישה הגרמנית לברית המועצות — רצחו יחידות האיינזצגרופן מאות אלפי אזרחים ביריות. חיילים ומפקדים החלו להתלונן על הנזק הנפשי שנגרם להם מירי בנשים, ילדים וחולים.\n\nבמשרד הראשי לביטחון הרייך (RSHA) בברלין התחילו לחפש שיטת רצח ״נקייה יותר״ — שיטה שתקל על המבצעים."}</div></FI>
 
     <FI d={.5}><div style={{borderRight:"3px solid #c4a050",paddingRight:"1.5rem",marginBottom:"2rem"}}>
-      <div style={{color:"#c4a050",fontSize:"clamp(.62rem,2vw,.7rem)",letterSpacing:".2em",marginBottom:".5rem"}}>הניסוי הראשון</div>
-      <div style={{color:"#bbb",fontSize:"clamp(.8rem,2.6vw,.9rem)",lineHeight:2.2,textAlign:"right"}}>{"ארתור נבה, מפקד איינזצגרופה B, ערך ניסוי של הזרמת גז פליטה ממנוע משאית לחדר אטום שבו הוחזקו חולי נפש. הניסוי הצליח.\n\nנבה דיווח לברלין. הכימאים של המכון לזיהוי פלילי ערכו ניסויים נוספים, ובעקבות התוצאות — הוחלט להשתמש בגז פליטה ממנועי רכב כשיטה להשמדה המונית.\n\nהביצוע הוטל על ולטר ראוף, מנהל האגף למינהל במשרד."}</div>
+      <div style={{color:"#c4a050",fontSize:"clamp(.78rem,2.5vw,.88rem)",letterSpacing:".2em",marginBottom:".5rem"}}>הניסוי הראשון</div>
+      <div style={{color:"#bbb",fontSize:"clamp(.95rem,3vw,1.08rem)",lineHeight:2.2,textAlign:"right"}}>{"ארתור נבה, מפקד איינזצגרופה B, ערך ניסוי של הזרמת גז פליטה ממנוע משאית לחדר אטום שבו הוחזקו חולי נפש. הניסוי הצליח.\n\nנבה דיווח לברלין. הכימאים של המכון לזיהוי פלילי ערכו ניסויים נוספים, ובעקבות התוצאות — הוחלט להשתמש בגז פליטה ממנועי רכב כשיטה להשמדה המונית.\n\nהביצוע הוטל על ולטר ראוף, מנהל האגף למינהל במשרד."}</div>
     </div></FI>
 
     <FI d={.7}><div style={{borderRight:"3px solid #c4a050",paddingRight:"1.5rem",marginBottom:"2rem"}}>
-      <div style={{color:"#c4a050",fontSize:"clamp(.62rem,2vw,.7rem)",letterSpacing:".2em",marginBottom:".5rem"}}>הנדסת ההשמדה</div>
-      <div style={{color:"#bbb",fontSize:"clamp(.8rem,2.6vw,.9rem)",lineHeight:2.2,textAlign:"right"}}>{"חברת Gaubschat בברלין הרכיבה על שלדות משאיות גדולות ארגזים ננעלים הרמטית.\n\nכפי שתיאר הארי ונטריט, מנהל הסדנה:\n\n״צינור פליטה גמיש הורכב על פתח הפליטה שבתחתית המשאית. ברצפת הארגז נקדח חור בקוטר של 58–60 מ״מ, בדומה לקוטר צינור הפליטה, עליו הולחם מבחוץ צינור מתכת, ואליו חובר צינור הפליטה הגמיש.\n\nעם הפעלת המנוע — הגזים זרמו מצינור הפליטה, דרך הצינור הגמיש, והתפזרו בתוך הארגז.״"}</div>
+      <div style={{color:"#c4a050",fontSize:"clamp(.78rem,2.5vw,.88rem)",letterSpacing:".2em",marginBottom:".5rem"}}>הנדסת ההשמדה</div>
+      <div style={{color:"#bbb",fontSize:"clamp(.95rem,3vw,1.08rem)",lineHeight:2.2,textAlign:"right"}}>{"חברת Gaubschat בברלין הרכיבה על שלדות משאיות גדולות ארגזים ננעלים הרמטית.\n\nכפי שתיאר הארי ונטריט, מנהל הסדנה:\n\n״צינור פליטה גמיש הורכב על פתח הפליטה שבתחתית המשאית. ברצפת הארגז נקדח חור בקוטר של 58–60 מ״מ, בדומה לקוטר צינור הפליטה, עליו הולחם מבחוץ צינור מתכת, ואליו חובר צינור הפליטה הגמיש.\n\nעם הפעלת המנוע — הגזים זרמו מצינור הפליטה, דרך הצינור הגמיש, והתפזרו בתוך הארגז.״"}</div>
     </div></FI>
 
     <FI d={.9}><div style={{display:"flex",flexWrap:"wrap",gap:"1rem",justifyContent:"center",marginTop:"1rem",marginBottom:"2rem"}}>
       {[["Saurer","קיבולת: 50–60 איש","משאית גדולה"],["Diamond Reo","קיבולת: 25–30 איש","משאית קטנה"],["מגירוס דויץ","3 יחידות בחלמנו","ארגז: 4–5 × 2.2 × 2 מ׳"]].map(([t,c,n],i)=>
         <div key={i} style={{background:"#1a1a1a",border:"1px solid #2a2a2a",borderRadius:4,padding:"1.2rem",width:"min(165px,42vw)",textAlign:"center"}}>
-          <div style={{fontFamily:"monospace",fontSize:"clamp(.6rem,2vw,.68rem)",color:"#c4a050",marginBottom:".4rem"}}>{t}</div>
+          <div style={{fontFamily:"monospace",fontSize:"clamp(.75rem,2.4vw,.85rem)",color:"#c4a050",marginBottom:".4rem"}}>{t}</div>
           <div style={{fontSize:"clamp(.72rem,2.3vw,.8rem)",color:"#ddd",lineHeight:1.7}}>{c}</div>
           <div style={{fontSize:"clamp(.58rem,1.8vw,.65rem)",color:"#666",marginTop:".3rem"}}>{n}</div>
         </div>
@@ -187,7 +187,7 @@ export default function App(){
 <div style={{background:"#0a0a0a",padding:"3rem 1.5rem",textAlign:"center"}}>
   <FI><div style={{maxWidth:420,margin:"0 auto"}} className="photo-container">
     <img src={IMG_V} alt="משאית גז מגירוס דויץ" style={{width:"100%",boxShadow:"0 8px 40px rgba(0,0,0,.5)"}}/>
-    <div style={{fontFamily:ff,fontSize:"clamp(.62rem,2vw,.7rem)",color:"#666",marginTop:"1rem",lineHeight:1.8,direction:"rtl"}}>{"משאית גז מתוצרת מגירוס דויץ — ממחנה ההשמדה חלמנו.\nחברי ועדת פשעי מלחמה בודקים את הרכב."}</div>
+    <div style={{fontFamily:ff,fontSize:"clamp(.78rem,2.5vw,.88rem)",color:"#666",marginTop:"1rem",lineHeight:1.8,direction:"rtl"}}>{"משאית גז מתוצרת מגירוס דויץ — ממחנה ההשמדה חלמנו.\nחברי ועדת פשעי מלחמה בודקים את הרכב."}</div>
   </div></FI>
 </div>
 
@@ -195,20 +195,20 @@ export default function App(){
 <div style={{background:"#0a0a0a",padding:"5rem 1.5rem",direction:"rtl"}}>
   <div style={{maxWidth:560,margin:"0 auto"}}>
     <FI><div style={{background:"#141414",border:"2px solid #9a2020",borderRadius:6,padding:"2rem 1.5rem",position:"relative",overflow:"hidden"}}>
-      <div style={{position:"absolute",top:0,right:0,background:"#9a2020",color:"#fff",fontFamily:"monospace",fontSize:"clamp(.55rem,1.8vw,.65rem)",padding:".3rem .8rem",borderBottomLeftRadius:4}}>כרטיס חומ״ס</div>
-      <div style={{fontSize:"clamp(1.1rem,4vw,1.4rem)",color:"#fff",fontWeight:700,marginTop:".5rem",textAlign:"center"}}>פחמן חד חמצני</div>
-      <div style={{fontSize:"clamp(.7rem,2.3vw,.8rem)",color:"#777",textAlign:"center",marginBottom:"1.5rem"}}>Carbon Monoxide — CO</div>
+      <div style={{position:"absolute",top:0,right:0,background:"#9a2020",color:"#fff",fontFamily:"monospace",fontSize:"clamp(.7rem,2.3vw,.8rem)",padding:".3rem .8rem",borderBottomLeftRadius:4}}>כרטיס חומ״ס</div>
+      <div style={{fontSize:"clamp(1.25rem,4.2vw,1.6rem)",color:"#fff",fontWeight:700,marginTop:".5rem",textAlign:"center"}}>פחמן חד חמצני</div>
+      <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#777",textAlign:"center",marginBottom:"1.5rem"}}>Carbon Monoxide — CO</div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:".6rem"}}>
         {[["מספר או\"ם","1016"],["ERG Guide","168"],["סיווג","גז רעיל + דליק"],["צבע / ריח","חסר צבע, חסר ריח"],["NFPA בריאות","3 (מסוכן)"],["NFPA דליקות","4 (קיצוני)"],["NFPA אי-יציבות","0 (יציב)"],["משקל סגולי","0.97 (קל מאוויר)"],["LEL","12.5%"],["UEL","74%"],["IDLH","1,200 ppm"],["LC50 שאיפה","~1,500 ppm/שעה"]].map(([k,v],i)=>
           <div key={i} style={{background:"#1c1c1c",borderRadius:3,padding:".5rem .7rem"}}>
             <div style={{fontFamily:"monospace",fontSize:"clamp(.48rem,1.6vw,.55rem)",color:"#555"}}>{k}</div>
-            <div style={{fontSize:"clamp(.7rem,2.3vw,.8rem)",color:"#ddd",fontWeight:500}}>{v}</div>
+            <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#ddd",fontWeight:500}}>{v}</div>
           </div>
         )}
       </div>
       <div style={{marginTop:"1.5rem",borderTop:"1px solid #222",paddingTop:"1rem"}}>
         <div style={{fontFamily:"monospace",fontSize:"clamp(.5rem,1.7vw,.58rem)",color:"#9a2020",marginBottom:".5rem"}}>מנגנון מוות</div>
-        <div style={{fontSize:"clamp(.75rem,2.4vw,.85rem)",color:"#aaa",lineHeight:2.2,textAlign:"right"}}>{"CO נקשר להמוגלובין בזיקה גבוהה פי 240 מחמצן, ויוצר קרבוקסיהמוגלובין (COHb). התאים אינם מקבלים חמצן. בריכוז גבוה — אובדן הכרה תוך דקות, מוות תוך 10–15 דקות.\n\nגז הפליטה ממנועי הדיזל והבנזין של המשאיות הכיל ריכוז גבוה של CO — תוצר של שריפה חלקית (לא אידיאלית) של דלק.\n\nסימן אופייני: גוון ורוד-דובדבן של העור — כפי שתיאר ד\"ר תיאודור פרידריך ליידיג מהמכון לזיהוי פלילי שנכח בניסויים."}</div>
+        <div style={{fontSize:"clamp(.88rem,2.8vw,.98rem)",color:"#aaa",lineHeight:2.2,textAlign:"right"}}>{"CO נקשר להמוגלובין בזיקה גבוהה פי 240 מחמצן, ויוצר קרבוקסיהמוגלובין (COHb). התאים אינם מקבלים חמצן. בריכוז גבוה — אובדן הכרה תוך דקות, מוות תוך 10–15 דקות.\n\nגז הפליטה ממנועי הדיזל והבנזין של המשאיות הכיל ריכוז גבוה של CO — תוצר של שריפה חלקית (לא אידיאלית) של דלק.\n\nסימן אופייני: גוון ורוד-דובדבן של העור — כפי שתיאר ד\"ר תיאודור פרידריך ליידיג מהמכון לזיהוי פלילי שנכח בניסויים."}</div>
       </div>
     </div></FI>
   </div>
@@ -217,10 +217,10 @@ export default function App(){
 {/* CHELMNO PROCESS */}
 <div style={{background:"#111",padding:"5rem 1.5rem",direction:"rtl"}}>
   <div style={{maxWidth:640,margin:"0 auto"}}>
-    <FI><div style={{color:"#c4a050",fontSize:"clamp(.65rem,2vw,.72rem)",letterSpacing:".3em",textAlign:"center",marginBottom:".5rem"}}>מחנה ההשמדה חלמנו</div>
-    <div style={{color:"#fff",fontSize:"clamp(1rem,3.5vw,1.3rem)",fontWeight:700,textAlign:"center",marginBottom:"2.5rem"}}>תהליך ההשמדה — שלב אחר שלב</div></FI>
+    <FI><div style={{color:"#c4a050",fontSize:"clamp(.78rem,2.5vw,.88rem)",letterSpacing:".3em",textAlign:"center",marginBottom:".5rem"}}>מחנה ההשמדה חלמנו</div>
+    <div style={{color:"#fff",fontSize:"clamp(1.15rem,3.8vw,1.4rem)",fontWeight:700,textAlign:"center",marginBottom:"2.5rem"}}>תהליך ההשמדה — שלב אחר שלב</div></FI>
 
-    <FI d={.3}><div style={{color:"#bbb",fontSize:"clamp(.8rem,2.6vw,.9rem)",lineHeight:2.3,textAlign:"right"}}>{"מחנה ההשמדה חלמנו (Kulmhof) היה הראשון שבו הושמדו קורבנות בגז באופן ״תעשייתי״. פעל מ-8 בדצמבר 1941 עד אפריל 1943, וחודש ביוני 1944 עד ינואר 1945.\n\nהמחנה כלל שני אתרים: ה-Schlosslager (מחנה הטירה) וה-Waldlager (מחנה היער), כ-4 ק\"מ צפון-מערב."}</div></FI>
+    <FI d={.3}><div style={{color:"#bbb",fontSize:"clamp(.95rem,3vw,1.08rem)",lineHeight:2.3,textAlign:"right"}}>{"מחנה ההשמדה חלמנו (Kulmhof) היה הראשון שבו הושמדו קורבנות בגז באופן ״תעשייתי״. פעל מ-8 בדצמבר 1941 עד אפריל 1943, וחודש ביוני 1944 עד ינואר 1945.\n\nהמחנה כלל שני אתרים: ה-Schlosslager (מחנה הטירה) וה-Waldlager (מחנה היער), כ-4 ק\"מ צפון-מערב."}</div></FI>
 
     {[
       ["הגעה והטעיה","עם הגיעם לטירה, התקבלו היהודים בנימוס. נאמר להם שהם מועברים ל\"יישוב מחדש\" בגרמניה או באוסטריה, ושעליהם לעבור חיטוי. חולקו לקבוצות של 30–40 איש והוכנסו לאולם מחומם."],
@@ -229,17 +229,17 @@ export default function App(){
       ["ההרג","הדלתות ננעלו. צינור הפליטה חובר. המנוע הופעל. גז CO זרם לתוך הארגז. בתוך כעשר דקות — כל הקורבנות מתו מהרעלת פחמן חד חמצני."],
       ["סילוק","המשאית נסעה למחנה היער (Waldlager). שם, הזונדרקומנדו — יהודים כבולים ברגליהם — פינו את הגופות לקברי המונים וניקו את המשאית. עוד ועוד קבוצות הובלו באותו היום."],
     ].map(([t,d],i)=><FI key={i} d={.5+i*.3}><div style={{borderRight:"3px solid #c4a050",paddingRight:"1.5rem",marginTop:"2rem"}}>
-      <div style={{color:"#c4a050",fontSize:"clamp(.62rem,2vw,.7rem)",letterSpacing:".2em",marginBottom:".5rem"}}>{t}</div>
+      <div style={{color:"#c4a050",fontSize:"clamp(.78rem,2.5vw,.88rem)",letterSpacing:".2em",marginBottom:".5rem"}}>{t}</div>
       <div style={{color:"#bbb",fontSize:"clamp(.78rem,2.5vw,.88rem)",lineHeight:2.2,textAlign:"right"}}>{d}</div>
     </div></FI>)}
 
     <FI d={2}><div style={{marginTop:"3rem",padding:"1.5rem",background:"#1a1a1a",border:"1px solid #333",borderRadius:4,textAlign:"center"}}>
       <div style={{fontSize:"clamp(1rem,3.5vw,1.2rem)",color:"#fff",fontWeight:700}}>לפחות 152,000 איש נרצחו בחלמנו</div>
-      <div style={{fontSize:"clamp(.75rem,2.5vw,.85rem)",color:"#888",marginTop:".5rem"}}>98% מהם — יהודים</div>
+      <div style={{fontSize:"clamp(.88rem,2.8vw,.98rem)",color:"#888",marginTop:".5rem"}}>98% מהם — יהודים</div>
     </div></FI>
 
     <FI d={2.3}><div style={{marginTop:"2rem",padding:"1.5rem",background:"rgba(154,32,32,.15)",border:"1px solid #9a2020",borderRadius:4,textAlign:"center"}}>
-      <div style={{fontSize:"clamp(.88rem,3vw,1.02rem)",color:"#e8d0c0",lineHeight:2.2}}>{"בין 24 ל-27 באפריל 1942 חוסל גטו וולוצלבק.\nהנותרים — זקנים, נשים וילדים — נשלחו לחלמנו.\n\nביניהם: יוכבד גייזלר, סבתא רבה שלי,\nצמרת (צ׳שה) אחותה, ויתר בני המשפחה.\nהם נרצחו במשאיות הגז."}</div>
+      <div style={{fontSize:"clamp(1.02rem,3.3vw,1.15rem)",color:"#e8d0c0",lineHeight:2.2}}>{"בין 24 ל-27 באפריל 1942 חוסל גטו וולוצלבק.\nהנותרים — זקנים, נשים וילדים — נשלחו לחלמנו.\n\nביניהם: יוכבד גייזלר, סבתא רבה שלי,\nצמרת (צ׳שה) אחותה, ויתר בני המשפחה.\nהם נרצחו במשאיות הגז."}</div>
     </div></FI>
   </div>
 </div>
@@ -247,10 +247,10 @@ export default function App(){
 {/* ZYKLON B SECTION */}
 <div style={{background:"#111",padding:"5rem 1.5rem",direction:"rtl"}}>
   <div style={{maxWidth:640,margin:"0 auto"}}>
-    <FI><div style={{color:"#c4a050",fontSize:"clamp(.65rem,2vw,.72rem)",letterSpacing:".3em",textAlign:"center",marginBottom:".5rem"}}>שלב ב׳</div>
+    <FI><div style={{color:"#c4a050",fontSize:"clamp(.78rem,2.5vw,.88rem)",letterSpacing:".3em",textAlign:"center",marginBottom:".5rem"}}>שלב ב׳</div>
     <div style={{color:"#fff",fontSize:"clamp(1.1rem,4vw,1.5rem)",fontWeight:700,textAlign:"center",marginBottom:"2.5rem"}}>ציקלון B — אושוויץ-בירקנאו</div></FI>
 
-    <FI d={.3}><div style={{color:"#bbb",fontSize:"clamp(.8rem,2.6vw,.9rem)",lineHeight:2.3,textAlign:"right"}}>{"ציקלון B אינו שם של סופת ציקלון. הוא שמו המסחרי של חומר הדברה שנועד להשמיד מזיקים.\n\nהחומר פותח בגרמניה בשנות ה-20 באמצעות פריץ האבר — יהודי מומר, חתן פרס נובל בכימיה, אבי הלוחמה הכימית במלחמת העולם הראשונה.\n\nחברת Degesch פיתחה תחילה את ציקלון A — חומר הדברה המשחרר מימן ציאנידי. ב-1922 נרכשה על ידי Degussa, שמצאה שיטה לאחסן מימן ציאנידי בפחיות המכילות דיאטומיט (מינרל טבעי מבוסס סיליקה). כך נולד ציקלון B.\n\nI.G. Farben רכשה 42% מ-Degussa. חברות אלו סיפקו 56 טון ציקלון B למחנות ההשמדה. חיי מדף של החומר — כ-3 חודשים בלבד, מה שחייב את מחנות ההשמדה להיות ׳יעילים׳ ולהשתמש בו לפני פקיעתו.\n\nהחומר הוסע למחנות באמבולנסים."}</div></FI>
+    <FI d={.3}><div style={{color:"#bbb",fontSize:"clamp(.95rem,3vw,1.08rem)",lineHeight:2.3,textAlign:"right"}}>{"ציקלון B אינו שם של סופת ציקלון. הוא שמו המסחרי של חומר הדברה שנועד להשמיד מזיקים.\n\nהחומר פותח בגרמניה בשנות ה-20 באמצעות פריץ האבר — יהודי מומר, חתן פרס נובל בכימיה, אבי הלוחמה הכימית במלחמת העולם הראשונה.\n\nחברת Degesch פיתחה תחילה את ציקלון A — חומר הדברה המשחרר מימן ציאנידי. ב-1922 נרכשה על ידי Degussa, שמצאה שיטה לאחסן מימן ציאנידי בפחיות המכילות דיאטומיט (מינרל טבעי מבוסס סיליקה). כך נולד ציקלון B.\n\nI.G. Farben רכשה 42% מ-Degussa. חברות אלו סיפקו 56 טון ציקלון B למחנות ההשמדה. חיי מדף של החומר — כ-3 חודשים בלבד, מה שחייב את מחנות ההשמדה להיות ׳יעילים׳ ולהשתמש בו לפני פקיעתו.\n\nהחומר הוסע למחנות באמבולנסים."}</div></FI>
   </div>
 </div>
 
@@ -258,7 +258,7 @@ export default function App(){
 <div style={{background:"#0a0a0a",padding:"3rem 1.5rem",textAlign:"center"}}>
   <FI><div style={{maxWidth:380,margin:"0 auto"}} className="photo-container">
     <img src={IMG_Z} alt="פחיות ציקלון B" style={{width:"100%",boxShadow:"0 8px 40px rgba(0,0,0,.5)"}}/>
-    <div style={{fontSize:"clamp(.62rem,2vw,.7rem)",color:"#666",marginTop:"1rem",lineHeight:1.8}}>פחיות ציקלון B — הגלולות הכחולות הן דיאטומיט ספוג במימן ציאנידי נוזלי</div>
+    <div style={{fontSize:"clamp(.78rem,2.5vw,.88rem)",color:"#666",marginTop:"1rem",lineHeight:1.8}}>פחיות ציקלון B — הגלולות הכחולות הן דיאטומיט ספוג במימן ציאנידי נוזלי</div>
   </div></FI>
 </div>
 
@@ -266,24 +266,24 @@ export default function App(){
 <div style={{background:"#0a0a0a",padding:"5rem 1.5rem",direction:"rtl"}}>
   <div style={{maxWidth:560,margin:"0 auto"}}>
     <FI><div style={{background:"#141414",border:"2px solid #9a2020",borderRadius:6,padding:"2rem 1.5rem",position:"relative",overflow:"hidden"}}>
-      <div style={{position:"absolute",top:0,right:0,background:"#9a2020",color:"#fff",fontFamily:"monospace",fontSize:"clamp(.55rem,1.8vw,.65rem)",padding:".3rem .8rem",borderBottomLeftRadius:4}}>כרטיס חומ״ס</div>
-      <div style={{fontSize:"clamp(1.1rem,4vw,1.4rem)",color:"#fff",fontWeight:700,marginTop:".5rem",textAlign:"center"}}>מימן ציאנידי</div>
-      <div style={{fontSize:"clamp(.7rem,2.3vw,.8rem)",color:"#777",textAlign:"center",marginBottom:"1.5rem"}}>Hydrogen Cyanide — HCN (ציקלון B)</div>
+      <div style={{position:"absolute",top:0,right:0,background:"#9a2020",color:"#fff",fontFamily:"monospace",fontSize:"clamp(.7rem,2.3vw,.8rem)",padding:".3rem .8rem",borderBottomLeftRadius:4}}>כרטיס חומ״ס</div>
+      <div style={{fontSize:"clamp(1.25rem,4.2vw,1.6rem)",color:"#fff",fontWeight:700,marginTop:".5rem",textAlign:"center"}}>מימן ציאנידי</div>
+      <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#777",textAlign:"center",marginBottom:"1.5rem"}}>Hydrogen Cyanide — HCN (ציקלון B)</div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:".6rem"}}>
         {[["מספר או\"ם","1051"],["ERG Guide","117"],["סיווג","גז רעיל + דליק קיצוני"],["צבע / ריח","חסר צבע, ריח שקדים מרים"],["NFPA בריאות","4 (קטלני)"],["NFPA דליקות","4 (קיצוני)"],["NFPA אי-יציבות","2"],["נקודת רתיחה","25.6°C (נוזל נדיף מאד)"],["LEL","5.6%"],["UEL","40%"],["PAC-2","7.1 ppm (פי 22 מאמוניה)"],["IDLH","50 ppm"]].map(([k,v],i)=>
           <div key={i} style={{background:"#1c1c1c",borderRadius:3,padding:".5rem .7rem"}}>
             <div style={{fontFamily:"monospace",fontSize:"clamp(.48rem,1.6vw,.55rem)",color:"#555"}}>{k}</div>
-            <div style={{fontSize:"clamp(.7rem,2.3vw,.8rem)",color:"#ddd",fontWeight:500}}>{v}</div>
+            <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#ddd",fontWeight:500}}>{v}</div>
           </div>
         )}
       </div>
       <div style={{marginTop:"1.5rem",borderTop:"1px solid #222",paddingTop:"1rem"}}>
         <div style={{fontFamily:"monospace",fontSize:"clamp(.5rem,1.7vw,.58rem)",color:"#9a2020",marginBottom:".5rem"}}>דרכי חשיפה ומנגנון מוות</div>
-        <div style={{fontSize:"clamp(.75rem,2.4vw,.85rem)",color:"#aaa",lineHeight:2.2,textAlign:"right"}}>{"רעיל עד מוות בכל דרך חשיפה — שאיפה, בליעה, וחדירה דרך העור.\n\nHCN חוסם את אנזים ציטוכרום C אוקסידאז במיטוכונדריה — התאים אינם מסוגלים לנצל חמצן למרות שהדם רווי בו. מוות תאי מהיר.\n\nשאיפה של 70 מ\"ג — מוות תוך 2 דקות (אדם 68 ק\"ג)."}</div>
+        <div style={{fontSize:"clamp(.88rem,2.8vw,.98rem)",color:"#aaa",lineHeight:2.2,textAlign:"right"}}>{"רעיל עד מוות בכל דרך חשיפה — שאיפה, בליעה, וחדירה דרך העור.\n\nHCN חוסם את אנזים ציטוכרום C אוקסידאז במיטוכונדריה — התאים אינם מסוגלים לנצל חמצן למרות שהדם רווי בו. מוות תאי מהיר.\n\nשאיפה של 70 מ\"ג — מוות תוך 2 דקות (אדם 68 ק\"ג)."}</div>
       </div>
       <div style={{marginTop:"1rem",borderTop:"1px solid #222",paddingTop:"1rem"}}>
         <div style={{fontFamily:"monospace",fontSize:"clamp(.5rem,1.7vw,.58rem)",color:"#9a2020",marginBottom:".5rem"}}>מתקני השמדה באושוויץ-בירקנאו</div>
-        <div style={{fontSize:"clamp(.75rem,2.4vw,.85rem)",color:"#aaa",lineHeight:2.2,textAlign:"right"}}>{"ב-3 ספטמבר 1941 — ניסוי ראשון בציקלון B במרתפי בלוק 11: ~600 שבויי מלחמה סובייטים ו-250 אסירים חולים.\n\nבונקר 1 (\"הבית האדום\") — בית מגורים שהוסב לתא גזים, מרץ 1942.\nבונקר 2 (\"הבית הלבן\") — קיבולת ~1,200 איש.\n4 קרמטוריומים (II–V) — כושר שריפה: 4,416 גופות ליום.\n\nהציקלון B הוכנס דרך פתחי אוורור בגג או בדפנות, באמצעות עמודי רשת מיוחדים.\n\nהקורבנות מתו בתוך 20 דקות."}</div>
+        <div style={{fontSize:"clamp(.88rem,2.8vw,.98rem)",color:"#aaa",lineHeight:2.2,textAlign:"right"}}>{"ב-3 ספטמבר 1941 — ניסוי ראשון בציקלון B במרתפי בלוק 11: ~600 שבויי מלחמה סובייטים ו-250 אסירים חולים.\n\nבונקר 1 (\"הבית האדום\") — בית מגורים שהוסב לתא גזים, מרץ 1942.\nבונקר 2 (\"הבית הלבן\") — קיבולת ~1,200 איש.\n4 קרמטוריומים (II–V) — כושר שריפה: 4,416 גופות ליום.\n\nהציקלון B הוכנס דרך פתחי אוורור בגג או בדפנות, באמצעות עמודי רשת מיוחדים.\n\nהקורבנות מתו בתוך 20 דקות."}</div>
       </div>
     </div></FI>
   </div>
@@ -293,13 +293,13 @@ export default function App(){
 <div style={{background:"#0a0a0a",padding:"3rem 1.5rem",textAlign:"center"}}>
   <FI><div style={{maxWidth:260,margin:"0 auto"}} className="photo-container">
     <img src={IMG_S} alt="סכמת עמוד ציקלון B" style={{width:"100%",boxShadow:"0 8px 40px rgba(0,0,0,.5)",background:"#fff",padding:6,borderRadius:2}}/>
-    <div style={{fontSize:"clamp(.6rem,2vw,.68rem)",color:"#666",marginTop:"1rem",lineHeight:1.8,direction:"rtl"}}>{"סכמת עמוד הרשת להכנסת ציקלון B לתאי הגזים\nעל פי עדותו של מיכאל קולה, אסיר מס׳ 2718, שעבד בבית המלאכה למתכת"}</div>
+    <div style={{fontSize:"clamp(.75rem,2.4vw,.85rem)",color:"#666",marginTop:"1rem",lineHeight:1.8,direction:"rtl"}}>{"סכמת עמוד הרשת להכנסת ציקלון B לתאי הגזים\nעל פי עדותו של מיכאל קולה, אסיר מס׳ 2718, שעבד בבית המלאכה למתכת"}</div>
   </div></FI>
 </div>
 
 {/* ═══════════ PART 3 ═══════════ */}
 <div style={{background:"#1a1a1a",padding:"4rem 1.5rem",textAlign:"center",direction:"rtl"}}>
-  <FI><div style={{color:"#c4a050",fontSize:"clamp(.6rem,2vw,.7rem)",letterSpacing:".6em",fontWeight:300,marginBottom:".8rem"}}>פרק שלישי</div>
+  <FI><div style={{color:"#c4a050",fontSize:"clamp(.75rem,2.4vw,.85rem)",letterSpacing:".6em",fontWeight:300,marginBottom:".8rem"}}>פרק שלישי</div>
   <div style={{fontFamily:hh,color:"#fff",fontSize:"clamp(1.8rem,6vw,2.8rem)",fontWeight:700}} className="chapter-title">המכתב שהגיע אחרי השקט</div></FI>
 </div>
 
@@ -316,14 +316,14 @@ export default function App(){
 
 {/* 1993 */}
 <div style={sec("#fff","80vh")}>
-  <FI><div style={{fontSize:"clamp(.68rem,2.2vw,.78rem)",color:"#999",marginBottom:"2rem"}}>שלמה גייזלר, 12.01.1993</div></FI>
-  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(1.1rem,4vw,1.4rem)",color:"#222",fontWeight:700,textAlign:"center",lineHeight:2.2,maxWidth:540,direction:"rtl",padding:"1.5rem 0",borderTop:"3px solid #c4a050",borderBottom:"3px solid #c4a050"}}>{"״אני חייב לכתוב את המכתב הארוך ביותר אליך אמא, והוא יהיה סגירת מעגל על עובדת חיי מאז שנפרדת ממני בתחנת הרכבת בוולצלבק.״"}</div></FI>
+  <FI><div style={{fontSize:"clamp(.82rem,2.7vw,.92rem)",color:"#999",marginBottom:"2rem"}}>שלמה גייזלר, 12.01.1993</div></FI>
+  <FI d={.3}><div style={{fontFamily:hh,fontSize:"clamp(1.25rem,4.2vw,1.6rem)",color:"#222",fontWeight:700,textAlign:"center",lineHeight:2.2,maxWidth:540,direction:"rtl",padding:"1.5rem 0",borderTop:"3px solid #c4a050",borderBottom:"3px solid #c4a050"}}>{"״אני חייב לכתוב את המכתב הארוך ביותר אליך אמא, והוא יהיה סגירת מעגל על עובדת חיי מאז שנפרדת ממני בתחנת הרכבת בוולצלבק.״"}</div></FI>
 </div>
 
 {/* 1993 FAREWELL LETTER TO MOTHER */}
 <div style={sec("#fff")}>
   <FI><div style={{color:"#c4a050",fontSize:"clamp(.65rem,2.1vw,.72rem)",letterSpacing:".2em",textAlign:"center",marginBottom:".3rem"}}>12.01.1993 · ישראל</div>
-  <div style={{fontSize:"clamp(.75rem,2.5vw,.85rem)",color:"#999",textAlign:"center",marginBottom:"2.5rem"}}>שלמה גייזלר כותב לאמו — סגירת מעגל</div></FI>
+  <div style={{fontSize:"clamp(.88rem,2.8vw,.98rem)",color:"#999",textAlign:"center",marginBottom:"2.5rem"}}>שלמה גייזלר כותב לאמו — סגירת מעגל</div></FI>
   <FI d={.3}><div style={{maxWidth:560,background:"#fff",border:"1px solid #e0d8cc",borderRadius:2,padding:"3rem 2rem",boxShadow:"0 4px 30px rgba(0,0,0,.06)"}}>
     <div style={{fontFamily:hh,fontSize:"clamp(1rem,3.5vw,1.2rem)",color:"#333",lineHeight:2.4,textAlign:"right",direction:"rtl",fontWeight:400}}>{"אני חייב לכתוב את המכתב הארוך ביותר אליך אימא, והוא יהיה סגירת מעגל על עובדת חיי מאז שנפרדת ממני בתחנת הרכבת בוולוצלבק.\n\nואת רצית לבכות כי חששת שלא ניפגש עוד ואז, זוכרת שאמרתי, אם תבכי כאן ליד הגרמני, אני לא אפרד ממך, ואז הבכי נפסק. ואנחנו נפרדנו ואני נשארתי עם ״יודה״, כרטיס כניסה לקרון של ״יודה״, ״קרון״, זאת אומרת, קרון סוסים.\n\nולמה זה המכתב האחרון שאני כותב, כי אני חושב שלא סיפרתי לך אף פעם מה קרה באותה דרך לאן שאני יצאתי לווילנא. מכיוון שפחדתי שהגרמנים יתנכלו לך.\n\nאם אספר את הפרטים האלה, והיום אם אני מסוגל לספר למען ההיסטוריה מה שקרה באותם ימים."}</div>
   </div></FI>
@@ -336,34 +336,34 @@ export default function App(){
   {[["יוכבד גייזלר","סבתא רבה — נרצחה בחלמנו"],["צמרת (צ׳שה) גייזלר","אחות סבתי — הלכה לגסטאפו להציל את אחיה. נרצחה בחלמנו"],["יצחק לייב (אריה) גייזלר","אח סבתי — חייל בצבא הפולני, נספה במיידנק"],["שמעון יוסף גייזלר","אח סבתי"],["ברוך אליעזר גייזלר","אח סבתי"],["גוטה בורנשטיין לבית גייזלר","אחות סבתי"],["כתריאל בורנשטיין","בעלה של גוטה"],["אווה ואסתר בורנשטיין","בנותיהם"],["ד\"ר ורב יוסף בונים גייזלר","דוד סבתי"],["הרב יעקב (יאצ׳ה) גייזלר","דוד סבתי"],["רגינה גייזלר","דודת סבתי — אחות בבית החולים היהודי בוולצלבק"],["הרב חיים הירש גייזלר","רב העיר לוביץ"]].map(([n,r],i)=>
     <FI key={i} d={.4+i*.12}><div style={{marginBottom:"1.5rem"}}>
       <div style={{fontSize:"clamp(.88rem,3vw,1rem)",color:"#222",fontWeight:700}}>{n}</div>
-      <div style={{fontSize:"clamp(.62rem,2.1vw,.72rem)",color:"#999",marginTop:".2rem"}}>{r}</div>
+      <div style={{fontSize:"clamp(.78rem,2.5vw,.88rem)",color:"#999",marginTop:".2rem"}}>{r}</div>
     </div></FI>
   )}
 </div>
 
 {/* ═══ CLOSING ═══ */}
 <div style={{background:"linear-gradient(180deg,#f4f0ea,#fff)",padding:"5rem 1.5rem",textAlign:"center",direction:"rtl"}}>
-  <FI><div style={{fontSize:"clamp(.65rem,2.1vw,.75rem)",color:"#999",letterSpacing:".3em",marginBottom:".5rem"}}>יום השואה תשפ״ו</div>
-  <div style={{fontSize:"clamp(.85rem,2.8vw,.95rem)",color:"#c4a050",marginBottom:"3rem"}}>ממעמקים: כאב השחרור והצמיחה</div></FI>
+  <FI><div style={{fontSize:"clamp(.8rem,2.6vw,.9rem)",color:"#999",letterSpacing:".3em",marginBottom:".5rem"}}>יום השואה תשפ״ו</div>
+  <div style={{fontSize:"clamp(1rem,3.2vw,1.12rem)",color:"#c4a050",marginBottom:"3rem"}}>ממעמקים: כאב השחרור והצמיחה</div></FI>
   <FI d={.5}><div style={{display:"flex",flexDirection:"column",alignItems:"center"}}><Flame s={28}/>
   <div style={{fontFamily:hh,fontSize:"clamp(1.4rem,5vw,1.8rem)",color:"#1a1a1a",fontWeight:700,marginTop:"1.5rem"}} className="hero-title">יהיה זכר הנספים ברוך</div></div></FI>
   <FI d={1}><div style={{marginTop:"4rem",textAlign:"center"}}>
     <div style={{maxWidth:340,margin:"0 auto 2rem"}} className="photo-container">
       <img src={IMG_C} alt="מכתבים להניה — כריכה אחורית" style={{width:"100%",borderRadius:4,boxShadow:"0 8px 30px rgba(0,0,0,.15)"}}/>
-      <div style={{fontFamily:ff,fontSize:"clamp(.82rem,2.8vw,.92rem)",color:"#333",marginTop:"1.2rem",fontWeight:600}}>חנה (הניה) צוקרמן ז״ל</div>
-      <div style={{fontFamily:ff,fontSize:"clamp(.62rem,2.1vw,.72rem)",color:"#999",marginTop:".3rem",lineHeight:1.8}}>סבתי — ששמרה את הקופסה</div>
+      <div style={{fontFamily:ff,fontSize:"clamp(.95rem,3vw,1.05rem)",color:"#333",marginTop:"1.2rem",fontWeight:600}}>חנה (הניה) צוקרמן ז״ל</div>
+      <div style={{fontFamily:ff,fontSize:"clamp(.78rem,2.5vw,.88rem)",color:"#999",marginTop:".3rem",lineHeight:1.8}}>סבתי — ששמרה את הקופסה</div>
     </div>
   </div></FI>
   <FI d={1.3}><div style={{marginTop:"3rem"}}>
     <div style={{fontSize:"clamp(.62rem,2vw,.72rem)",color:"#aaa",lineHeight:2.2}}>{"מבוסס על הספר המשפחתי ״מכתבים להניה״\nדברי שלמה גייזלר ז״ל\nאחי סבתי חנה (הניה) צוקרמן ז״ל"}</div>
     <div style={{width:40,height:1,background:"#ddd",margin:"2rem auto"}}/>
-    <div style={{fontSize:"clamp(.58rem,1.8vw,.66rem)",color:"#ccc",marginBottom:"2rem"}}>60 שניות חומ״ס</div>
+    <div style={{fontSize:"clamp(.72rem,2.3vw,.82rem)",color:"#ccc",marginBottom:"2rem"}}>60 שניות חומ״ס</div>
     <div style={{width:50,height:1,background:"#ddd",margin:"0 auto 2rem"}}/>
     <div style={{fontSize:"clamp(.7rem,2.3vw,.82rem)",color:"#888",lineHeight:2.2,direction:"rtl"}}>{"נכתב על ידי"}</div>
-    <div style={{fontSize:"clamp(.82rem,2.8vw,.95rem)",color:"#444",fontWeight:600,lineHeight:2,direction:"rtl",marginTop:".3rem"}}>{"ס/טפסר רועי צוקרמן"}</div>
-    <div style={{fontSize:"clamp(.68rem,2.2vw,.78rem)",color:"#888",lineHeight:1.8,direction:"rtl"}}>{"רע״ן חומ״ס באגף המבצעים\nכבאות והצלה לישראל"}</div>
-    <div style={{fontSize:"clamp(.68rem,2.2vw,.78rem)",color:"#999",marginTop:".8rem",fontStyle:"italic",direction:"rtl"}}>{"נכדה של חנה (הניה) צוקרמן ז״ל"}</div>
-    <a href="https://www.facebook.com/share/1L8YZHGbxm/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:8,marginTop:"1.5rem",padding:"10px 20px",background:"#1a1a1a",color:"#fff",borderRadius:25,textDecoration:"none",fontSize:"clamp(.68rem,2.2vw,.78rem)",fontFamily:ff,boxShadow:"0 2px 12px rgba(0,0,0,.1)"}}>
+    <div style={{fontSize:"clamp(.98rem,3.1vw,1.1rem)",color:"#444",fontWeight:600,lineHeight:2,direction:"rtl",marginTop:".3rem"}}>{"ס/טפסר רועי צוקרמן"}</div>
+    <div style={{fontSize:"clamp(.82rem,2.7vw,.92rem)",color:"#888",lineHeight:1.8,direction:"rtl"}}>{"רע״ן חומ״ס באגף המבצעים\nכבאות והצלה לישראל"}</div>
+    <div style={{fontSize:"clamp(.82rem,2.7vw,.92rem)",color:"#999",marginTop:".8rem",fontStyle:"italic",direction:"rtl"}}>{"נכדה של חנה (הניה) צוקרמן ז״ל"}</div>
+    <a href="https://www.facebook.com/share/1L8YZHGbxm/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:8,marginTop:"1.5rem",padding:"10px 20px",background:"#1a1a1a",color:"#fff",borderRadius:25,textDecoration:"none",fontSize:"clamp(.82rem,2.7vw,.92rem)",fontFamily:ff,boxShadow:"0 2px 12px rgba(0,0,0,.1)"}}>
       <span>{"🕯️"}</span>
       <span>{"60 שניות חומ״ס — עקבו אחרינו"}</span>
     </a>
